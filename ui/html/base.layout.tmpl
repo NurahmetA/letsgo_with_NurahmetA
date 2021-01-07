@@ -15,8 +15,9 @@
         <h1><a href='/'>Snippetbox</a></h1>
     </header>
     <nav>
-        <a href='/'>Home</a>
-        <a href='/snippet/create'>Create snippet</a>
+        <form action="/snippet/create" method="post">
+            <input type="link" value="Create Snippet">
+        </form>
     </nav>
     <main>
         {{template "main" .}}
